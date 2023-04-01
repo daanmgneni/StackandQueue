@@ -13,8 +13,12 @@ namespace day14_StackAndQueuesProgram
             obj.push(30);
             obj.push(56);
             obj.Display();
+            //obj.Peek();
+            Console.WriteLine("After pop operation:");
+            //obj.Pop();
+            obj.IsEmpty();
+            obj.Display();
         }
 
     }
 }
-
