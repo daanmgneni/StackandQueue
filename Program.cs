@@ -8,16 +8,17 @@ namespace day14_StackAndQueuesProgram
             Console.WriteLine("Welcome to Stack And Queue Program!");
             Console.WriteLine("#####################");
 
-            StackWithLinkedList obj = new StackWithLinkedList();
-            obj.push(70);
-            obj.push(30);
-            obj.push(56);
+            QueueWithLinkedList obj = new QueueWithLinkedList();
+            obj.Enqueue(56);
+            obj.Enqueue(30);
+            obj.Enqueue(70);
+            Console.WriteLine("Element stored in queue is:-");
             obj.Display();
-            //obj.Peek();
-            Console.WriteLine("After pop operation:");
-            //obj.Pop();
-            obj.IsEmpty();
+            Console.WriteLine("After Dequeue operation:");
+            obj.Dequeue();
+            Console.WriteLine("Element stored in queue is:-");
             obj.Display();
+
         }
 
     }
